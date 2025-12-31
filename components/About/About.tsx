@@ -1,17 +1,22 @@
 'use client'
+import TechMarquee from './TechMarquee'
+
 
 interface AboutProps {
   setActiveSection: (section: string) => void
 }
 
+
 export default function About({ setActiveSection }: AboutProps) {
   return (
     <section
       id="about"
-      className="py-20 bg-white"
+      className="py-5 bg-white scroll-mt-16"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="text-center mb-16">
+          <TechMarquee/>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
@@ -53,33 +58,10 @@ export default function About({ setActiveSection }: AboutProps) {
 
           <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl p-8 shadow-lg">
             <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  5+
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Interactive Front-Ends</h3>
-                  <p className="text-gray-600">Responsive UIs that enage users</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  100+
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Robust Backends</h3>
-                  <p className="text-gray-600">Scalable APIs and efficient server logic </p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  50+
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900">Agile Collaboration</h3>
-                  <p className="text-gray-600">Delivering results fast in SCRUM teams</p>
-                </div>
-              </div>
+            <iframe src="\resume\RSResume.pdf" width="100%" height="600px">
+               
+            </iframe>
+
             </div>
           </div>
         </div>

@@ -3,18 +3,18 @@
 import { useState, useEffect } from 'react'
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
-import About from '@/components/About'
+import About from '@/components/About/About'
 import Projects from '@/components/Projects'
 import Skills from '@/components/Skills'
 import Booking from '@/components/Booking'
-import Contact from '@/components/Contact'
+
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'skills', 'booking', 'contact']
+      const sections = ['home', 'about', 'projects', 'skills', 'booking']
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -41,7 +41,7 @@ export default function Home() {
       <Projects setActiveSection={setActiveSection} />
       <Skills setActiveSection={setActiveSection} />
       <Booking setActiveSection={setActiveSection} />
-      <Contact setActiveSection={setActiveSection} />
+     
     </main>
   )
 }

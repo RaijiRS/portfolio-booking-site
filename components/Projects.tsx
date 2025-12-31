@@ -33,11 +33,11 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Mobile Banking App',
-    description: 'Secure mobile banking application with biometric authentication and transaction history.',
-    tech: ['React Native', 'Firebase', 'Stripe'],
-    image: '💳',
-    url: 'example.com'
+    title: 'Web Scraping Project',
+    description: 'A Node.js-based web scraping project that retrieves quotes from quotes.toscrape.com and exposes them via a REST API. This project demonstrates backend development, web scraping, modular code structure, and JSON API design.',
+    tech: ['Node.js', 'JavaScript', 'REST API'],
+    image: '🕷️',
+    url: 'https://github.com/RaijiRS/webcrawler'
   },
 ]
 
@@ -47,11 +47,11 @@ export default function Projects({ setActiveSection }: ProjectsProps) {
   return (
     <section
       id="projects"
-      className="py-20 bg-gray-50"
+      className="py-20 bg-gray-50 scroll-mt-16"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16 text-black">
+          <h2 className="text-4xl md:text-5xl font-bold text-black-900 mb-4">
             Featured Projects
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>

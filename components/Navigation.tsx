@@ -1,7 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Github, Linkedin, Mail} from 'lucide-react'
+
+
 
 interface NavigationProps {
   activeSection: string
@@ -33,14 +35,57 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection('home')}
-              className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
-            >
-              Raiji Sacaza
-            </button>
-          </div>
+        <div className="flex items-center gap-4 flex-shrink-0">
+  <button
+    onClick={() => scrollToSection('home')}
+    className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
+  >
+    Raiji Sacaza
+  </button>
+
+  {/* Social Icons */}
+  <div className="flex items-center gap-3">
+    <a
+      href="https://github.com/RaijiRS"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-600 hover:text-black transition"
+      aria-label="GitHub"
+    >
+      <Github size={18} />
+    </a>
+
+    <a
+      href="https://linkedin.com/in/raijisacaza"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-600 hover:text-blue-600 transition"
+      aria-label="LinkedIn"
+    >
+      <Linkedin size={18} />
+    </a>
+    <a
+  href="mailto:raiji87@gmail.com"
+  className="text-gray-600 hover:text-red-600 transition"
+  aria-label="Mail"
+  onClick={(e) => {
+    e.preventDefault()
+    window.location.href =
+      'mailto:raiji87@gmail.com'
+    setTimeout(() => {
+      window.open(
+        'https://mail.google.com/mail/?view=cm&fs=1&to=raiji87@gmail.com',
+        '_blank'
+      )
+    }, 300)
+  }}
+>
+  <Mail size={22} />
+</a>
+
+  </div>
+</div>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

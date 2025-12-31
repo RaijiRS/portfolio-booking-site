@@ -40,10 +40,10 @@ export default function Hero({ setActiveSection }: HeroProps) {
               Projects
             </button>
             <button
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('about')}
               className="px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold text-lg border-2 border-primary-600 hover:bg-primary-50 transition-all transform hover:scale-105"
             >
-              View My Work
+              About Me
             </button>
           </div>
 

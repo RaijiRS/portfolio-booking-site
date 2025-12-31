@@ -8,28 +8,28 @@ const skillCategories = [
   {
     title: 'Frontend Development',
     skills: [
-      { name: 'React', level: 90 },
-      { name: 'Next.js', level: 85 },
-      { name: 'TypeScript', level: 88 },
-      { name: 'Tailwind CSS', level: 92 },
+      { name: 'JavaScript', level: 83 },
+      { name: 'HTML', level: 85 },
+      { name: 'Vue', level: 75 },
+      { name: 'CSS', level: 70 },
     ],
   },
   {
     title: 'Backend Development',
     skills: [
       { name: 'Node.js', level: 85 },
-      { name: 'Python', level: 80 },
-      { name: 'PostgreSQL', level: 75 },
-      { name: 'MongoDB', level: 78 },
+      { name: 'Java', level: 85 },
+      { name: 'Python', level: 70 },
+      { name: 'PostgreSQL', level: 70 },
     ],
   },
   {
     title: 'Tools & Others',
     skills: [
-      { name: 'Git', level: 90 },
-      { name: 'Docker', level: 70 },
-      { name: 'AWS', level: 75 },
-      { name: 'CI/CD', level: 80 },
+      { name: 'Git', level: 85 },
+      { name: 'Postman', level: 80 },
+      { name: 'AWS/Cloud', level: 65 },
+      { name: 'C/C++', level: 80 },
     ],
   },
 ]

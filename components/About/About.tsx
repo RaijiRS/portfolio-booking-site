@@ -58,7 +58,7 @@ export default function About({ setActiveSection }: AboutProps) {
 
           <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl p-8 shadow-lg">
             <div className="space-y-6">
-            <iframe src="\resume\RSResume.pdf" width="100%" height="600px">
+            <iframe src="\resume\RRSResume.pdf" width="100%" height="600px">
                
             </iframe>
 

@@ -18,7 +18,6 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
     { id: 'about', label: 'About' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
-    { id: 'booking', label: 'Book Appointment' },
     { id: 'contact', label: 'Contact' },
   ]
 
@@ -33,7 +32,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-2 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
         <div className="flex items-center gap-4 flex-shrink-0">
   <button

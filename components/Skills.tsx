@@ -8,28 +8,28 @@ const skillCategories = [
   {
     title: 'Frontend Development',
     skills: [
-      { name: 'JavaScript', level: 83 },
-      { name: 'HTML', level: 85 },
-      { name: 'Vue', level: 75 },
-      { name: 'CSS', level: 70 },
+      { name: 'JavaScript', level: 'Advanced' },
+      { name: 'HTML', level: 'Advanced' },
+      { name: 'Vue', level: 'Beginner' },
+      { name: 'CSS', level: 'Intermediate' },
     ],
   },
   {
     title: 'Backend Development',
     skills: [
-      { name: 'Node.js', level: 85 },
-      { name: 'Java', level: 85 },
-      { name: 'Python', level: 70 },
-      { name: 'PostgreSQL', level: 70 },
+      { name: 'Node.js', level: 'Advanced' },
+      { name: 'Java', level: 'Advanced' },
+      { name: 'Python', level: 'Intermediate' },
+      { name: 'MongoDB', level: 'Advanced'},
     ],
   },
   {
     title: 'Tools & Others',
     skills: [
-      { name: 'Git', level: 85 },
-      { name: 'Postman', level: 80 },
-      { name: 'AWS/Cloud', level: 65 },
-      { name: 'C/C++', level: 80 },
+      { name: 'Git', level: 'Advanced' },
+      { name: 'Postman', level: 'Intermediate' },
+      { name: 'AWS/Cloud', level: 'Intermediate' },
+      { name: 'C/C++', level: 'Advanced' },
     ],
   },
 ]
@@ -68,14 +68,8 @@ export default function Skills({ setActiveSection }: SkillsProps) {
                         {skill.name}
                       </span>
                       <span className="text-sm font-medium text-primary-600">
-                        {skill.level}%
+                        {skill.level}
                       </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div
-                        className="bg-primary-600 h-2.5 rounded-full transition-all duration-1000"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
                     </div>
                   </div>
                 ))}
